@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family-Montserrat:wght@500&family-Work+Sans&display-swap');
+    *{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+:root{
+    --font: 'Montserrat', sans-serif;
+    --prime-font: 'Work Sans', sans-serif;
+    --bg: #1a1c20;
+    --main-color: #100b2b;
+    --main-font-color: #fdfbfb;
+    --sec-font-color: #fcflflb4 ;
+}
+body{
+    background-color: #e6e6e6;
+}
+.nav1{
+    background: var(--bg);
+    height : 80px;
+    width: 100%;
+}
+.logo{
+ font-family: var(--font);
+ font-size: 2.1em;
+ text-transform: capitalize;
+ color: #e6e6e6;
+ float: left;
+}
+.logoitem{
+    float : left;
+}
+.logonav a{
+    text-decoration:solid;
+    color : #e6e6e6;
+    font-family : var(--font);   
+    font-size: 1.4em; 
+}
+.logonav{
+    padding: 7px 2px 2px 0px;
+	text-align: right;
+    height: 60px;
+}
+.logonav li{
+    display: inline-block;
+	list-style: none;
+	margin : 15px 15px 15px 15px;
+    padding: 7px auto auto 7px;
+  
+}
+.logonav li a:hover{
+    color : rgb(163, 160, 160);
+}
+.logonav a:active{
+color:rgb(255, 255, 255);
+text-decoration: underline;
+}
+li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(209, 209, 209);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1em;
+  }
+  
+  .dropdown-content a:hover {background-color: #363535;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.label{
+    font-family: var(--font);
+    font-size: 1em;
+    color: #e6e6e6;
+}
+.main{
+    color: white;
+    background-color: #100b2b;
+    box-shadow: 7px 7px 10px rgb(155, 155, 155);
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+.myphoto{
+    margin-top: 20px;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    }
+    .img1{
+    height: 100%;
+    width: 100%;
+    border-radius: 50% ;
+}
+.head2{
+    color:rgb(163, 160, 160);
+}
+.head3{
+    color: white;
+}
+h2{
+    color:rgb(209, 209, 209);
+}
+p{
+    color:rgb(190, 190, 190);
+}
+.img2{
+    width: 18em;
+    margin: 10px 0px 10px 0px;
+    opacity: 0.7;
+}
+.foot{
+    background-color: var(--bg);
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 5px solid var(--sec-font-color);
+
+}
+.foot h2{
+    color :rgb(163, 160, 160);
+    margin-top: 40px;
+}
+.foot1{
+    background-color: var(--bg);
+    height: 17em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+.foot1 h4{
+    font-size: 1.2em;
+color:rgb(163, 160, 160);
+text-align: center;
+}
+.foot1 h3{
+    font-size: 1.5rem;
+color:rgb(163, 160, 160);
+text-align: center;
+}
+h6{
+    color:rgb(219, 219, 219);
+margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+    .logonav a{
+        text-decoration:solid;
+        color : #e6e6e6;
+        font-family : var(--font);   
+        font-size: 1.2em; 
+    }
+
+    .label{
+        font-family: var(--font);
+        font-size: 0.9em;
+        color: #e6e6e6;
+    }
+    .logo{
+        font-family: var(--font);
+        font-size: 2.2em;
+        text-transform: capitalize;
+        color: #e6e6e6;
+        float: left;
+       }
+
+    .nav1{
+        background: var(--bg);
+        height : 120px;
+    }
+    .foot1 h3{
+    font-size: 1.2em;
+    padding: 0px 10px 10px 10px;
+}
+}
+
+    </style>
+    </head>
+    <body>
+        <header class="nav">
+            <div class="nav1">
+            <ul class="logonav">
+                <li class="logo">GD</li>
+                <li class="nav-item about"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="skillpage.html">Skills</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                      <a href="Project1.html">Project 1</a>
+                      <a href="#">Project 2</a>
+                      <a href="#">Project 3</a>
+                    </div></li>
+                <li class="nav-item"><label class ="label" for="search">Search </label><input type="text" id="search" placeholder="Search Here.."></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container main" style="margin-top:30px">
+        <div class="row">
+          <div class="col-sm-4" style="padding: 20px 15px 10px 20px;">
+            <h2>About</h2>
+            <h5>Gaurav Dwivedi</h5>
+            <div class="myphoto"><img class="img1" src="gd2.png" alt="gaurav"></div>
+            <p style="margin-bottom: 12em;">I solve problems in creative ways. At UPES, where I am pursuing my B.Tech in Petroleum engineering with specialization in Upstream , I have learned the importance of applying classical strategies to modern-day projects.</p>
+
+            <h3 style="border-top: 1px solid rgba(170, 168, 168,0.7); padding-top: 15px;">Other Links</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <ul class="nav nav-pills flex-column ">
+              <li class="nav-item">
+                <a class="text-success nav-link" href="homeportfolio.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-success nav-link" href="https://www.upes.ac.in/" target="_blank">UPES</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-success nav-link" href="https://dav14faridabad.ac.in/" target="_blank">DAV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active bg-success " href="aboutpage.html">About</a>
+              </li>
+            </ul>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-8" style="padding: 20px 15px 10px 20px;">
+            <h2>Education</h2>
+            <h4 class="head2">Schools :</h4>
+            <h5 class="head3">DAV PUBLIC SCHOOL, Sec-14 Faridabad</h5>
+            <div class="school"><img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R0YgChpqQFzKUaYMEEXtCtDlw1kpOw2RpQ&usqp=CAU" alt="dav"></div>
+            <p>Class : 10th</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h6>Completed in 2017!</h6>
+            <br>
+            <h5 class="head3">DAV PUBLIC SCHOOL, Sec-14 Faridabad</h5>
+            <div class="school"><img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1R0YgChpqQFzKUaYMEEXtCtDlw1kpOw2RpQ&usqp=CAU" alt="dav"></div>
+            <p>Class : 12th</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h6>Completed in 2019!</h6>
+            <br>
+            <h4 class="head2">Graduation :</h4>
+            <h5 class="head3">UPES-Dehradun</h5>
+            <div class="college"><img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRermPsICr5ESysPTbQYujiFag6NWr-5TP8BQ&usqp=CAU" alt="upes"></div>
+            <p>Batch : 2019 - 2023</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <h2>Experience : </h2>
+            <div class="fakeimg"><img class="img2" src="data:image/jpeg;base64,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" alt="exp"></div>
+            <h5 class="head3"><em>"Currently Intern at Unschool"</em></h5>
+            <p>What i learnt?*</p>
+            <p>-Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h5>Other Experiences (if any)</h5>
+            <h6>-Public Relation Committe Member At <span style="color:rosybrown"><b>SEG, UPES</b></span></h6>
+            <h6>-Public Relation Committe Member At <span  style="color:rosybrown"><b>Connoisuer-Literary Club of UPES</b></span> </h6>
+            </div>
+          </div>
+        </div>
+      
+    
+        <div class="container" style="background-color: #1a1c20">
+            <div class="d-flex flex-row">
+              <div class="col">
+                <div class="row">
+                
+              <div class="p-2 text-dark"><a href="#" class="text-light">Privacy</a></div>
+              <div class="p-2 text-dark"><a href="#" class="text-light">Instagram</a></div>
+              <div class="p-2 text-dark"><a href="#" class="text-light">Contact</a></div>
+            </div>
+              <div class="row text-muted"><p>Copyright 2021, - by Gaurav Dwivedi</p></div><br>
+            </div></div>
+      </div>
+    </body>
+</html>
